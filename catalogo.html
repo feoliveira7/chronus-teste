@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONUS</title>
+    <link rel="stylesheet" href="styles/catalogo.css">
+    <link rel="icon" href="images/diamond.png">
+</head>
+<body>
+    
+
+    <header>
+        <div class="principalContainer">
+            <img src="images/menu.png" class="menuBurguer" onclick="openMenu()" id="openButton" alt="">
+            <img src="images/menu.png" class="menuBurguer" onclick="closeMenu()" id="closeButton" alt="">
+            <img src="images/logoChronus.png" onclick="location.href='index.html'" class="logoHeader" alt="">
+            <img class="accountIconMobile" src="images/account.png" alt="">
+
+            <div class="searchbar">
+                <input class="searchInput" type="text"> <img class="searchButton" src="images/search icon.png" alt="">
+            </div>
+
+            <div class="loginBox">
+                <img class="accountIcon" src="images/account.png" alt="">
+                <p class="accountName">Minha conta</p>
+            </div>
+        </div>
+        <div class="navbar">
+            <p class="itemList" onclick="location.href='catalogo.html'">Todas as marcas</p>
+            <p class="itemList">Masculino</p>
+            <p class="itemList">Feminino</p>
+            <p class="itemList">Promoção</p>
+            <p class="itemList2">Dúvidas Frequentes</p>
+
+            <div class="searchbarMobile">
+                <input class="searchInputMobile" type="text"> <img class="searchButtonMobile" src="images/search icon.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="mobileMenu" id="mobileMenu">
+
+            <h1 class="destaquesTitle">CATEGORIAS</h1>
+
+            <div class="linksMenuGroup">
+                <p class="itemListMobile" onclick="location.href='catalogo.html'">> Todas as marcas</p>
+                <p class="itemListMobile">> Masculino</p>
+                <p class="itemListMobile">> Feminino</p>
+                <p class="itemListMobile">> Promoção</p>
+                <p class="itemListMobile">> Dúvidas Frequentes</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="principalContainer2">
+
+            <div class="title-and-filter">
+
+                <p class="destaquesTitle">Todos os relógios</p>
+
+                <div class="filtersContainer">
+                    <p class="filter">Filtrar por:</p>
+                    <p class="filter3">Filtros &darr; </p>
+                    <div class="filtersGroup">
+                        <p class="filter2">Marca &darr;</p>
+                        <p class="filter2">Gênero &darr;</p>
+                        <p class="filter2">Preço &darr;</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="catalogoContainer">
+
+        <div class="card" onclick="produto2()">
+                        
+                <img class="imageCard" src="images/relogios/Rolex-DayDate-40.png" alt="">
+        
+                <p class="nameCard">Rolex DayDate 40</p>
+        
+                <p class="valor" id="valor2">VER PRODUTO</p>
+        </div>
+        
+        <div class="card" onclick="produto1()">
+            
+            <img class="imageCard" src="images/relogios/Rolex-GMT-master-II.png" alt="">
+        
+            <p class="nameCard">Rolex GMT Master II</p>
+        
+            <p class="valor" id="valor1">VER PRODUTO</p>
+        </div>
+        
+        <div class="card" onclick="produto3()">
+            
+        <img class="imageCard" src="images/relogios/Rolex-Submariner-Date.png" alt="">
+        
+        <p class="nameCard">Rolex Submariner Date</p>
+        
+        <p class="valor" id="valor3">VER PRODUTO</p>
+        </div>
+
+        <div class="card" onclick="produto12()">
+                        
+            <img class="imageCard" src="images/relogios/patek-aquanaut.png" alt="">
+    
+            <p class="nameCard">Patek Philippe Aquanaut</p>
+    
+            <p class="valor" id="valor12">VER PRODUTO</p>
+    </div>
+    
+    <div class="card" onclick="produto10()">
+        
+        <img class="imageCard" src="images/relogios/patek-nautilus-5980.png" alt="">
+    
+        <p class="nameCard">Patek Phillip Nautilus 5980</p>
+    
+        <p class="valor" id="valor10">VER PRODUTO</p>
+    </div>
+    
+    <div class="card" onclick="produto11()">
+        
+        <img class="imageCard" src="images/relogios/patek-calatrava.png" alt="">
+        
+        <p class="nameCard">Patek Phillipe Calatrava</p>
+        
+        <p class="valor" id="valor11">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto13()">
+                        
+        <img class="imageCard" src="images/relogios/hublot-bigban-ferrari.png" alt="">
+
+        <p class="nameCard">Hublot Big Bang Ferrari King Gold</p>
+
+        <p class="valor" id="valor13">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto15()">
+        
+        <img class="imageCard" src="images/relogios/hublot-classic-fusion.png" alt="">
+
+        <p class="nameCard">Hublot Classic Fusion</p>
+
+        <p class="valor" id="valor15">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto14()">
+        
+        <img class="imageCard" src="images/relogios/hublot-spirit.png" alt="">
+
+        <p class="nameCard">Hublot Spirit of Big Bang</p>
+
+        <p class="valor" id="valor14">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto9()">
+                            
+        <img class="imageCard" src="images/relogios/TAG-Carrera-Calibre16.png" alt="">
+
+        <p class="nameCard">TAG Heuer Carrera Calibre 16</p>
+
+        <p class="valor" id="valor9">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto7()">
+
+        <img class="imageCard" src="images/relogios/TAG-formula1.png" alt="">
+
+        <p class="nameCard">TAG Heuer Formula 1</p>
+
+        <p class="valor" id="valor7">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto8()">
+
+        <img class="imageCard" src="images/relogios/TAG-Monaco.png" alt="">
+
+        <p class="nameCard">TAG Heuer Monaco</p>
+
+        <p class="valor" id="valor8">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto4()">
+                            
+        <img class="imageCard" src="images/relogios/IWC-Pilot-Watch-TopGun.png" alt="">
+
+        <p class="nameCard">IWC Pilot's Watch Top Gun</p>
+
+        <p class="valor" id="valor4">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto5()">
+
+    <img class="imageCard" src="images/relogios/IWC-Portugieser-chronography.png" alt="">
+
+    <p class="nameCard">IWC Portugieser Chronograph</p>
+
+    <p class="valor" id="valor5">VER PRODUTO</p>
+    </div>
+
+    <div class="card" onclick="produto6()">
+
+    <img class="imageCard" src="images/relogios/IWC-Portugieser-perpetual-calendar.png" alt="">
+
+    <p class="nameCard">IWC Portugieser Perpetual Calendar</p>
+
+    <p class="valor" id="valor6">VER PRODUTO</p>
+    </div>
+
+        </div>
+
+    </main>
+
+
+    
+
+
+    <footer>
+        <img class="logoFooter" src="images/logoChronus.png" alt="">
+
+        <div class="blocosFooterContainer">
+            <div class="blocoFooter">
+                <p class="titleFooter">Sobre nós</p>
+                <p class="linkFooter">Quem somos</p>
+                <p class="infoFooter">(11) 98765-4321</p>
+                <p class="infoFooter">00.000.000/0000-00</p>
+                <p class="infoFooter">Mogi das Cruzes, SP</p>
+            </div>
+    
+            <div class="blocoFooter">
+                <p class="titleFooter">Institucional</p>
+                <p class="linkFooter">Perguntas Frequentes</p>
+                <p class="linkFooter">Formas de pagamento</p>
+                <p class="linkFooter">Trocas e devoluções</p>
+                <p class="linkFooter">Garantia</p>
+                <p class="linkFooter">Política de privacidade</p>
+
+            </div>
+
+            <div class="blocoFooter2">
+                <p class="titleFooter">Formas de envio</p>
+                <img class="logoCorreio" src="images/logoscorreio.png" alt="">
+            </div>
+
+            
+        </div>
+
+        <p class="copy">CHRONUS © Todos os direitos reservados. 2025</p>
+
+        
+        
+
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="save.js"></script>
+    <script src="load.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONUS</title>
+    <link rel="stylesheet" href="styles/produto.css">
+    <link rel="icon" href="images/diamond.png">
+</head>
+<body>
+    
+
+    <header>
+        <div class="principalContainer">
+            <img src="images/menu.png" class="menuBurguer" onclick="openMenu()" id="openButton" alt="">
+            <img src="images/menu.png" class="menuBurguer" onclick="closeMenu()" id="closeButton" alt="">
+            <img src="images/logoChronus.png" onclick="location.href='index.html'" class="logoHeader" alt="">
+            <img class="accountIconMobile" src="images/account.png" alt="">
+
+            <div class="searchbar">
+                <input class="searchInput" type="text"> <img class="searchButton" src="images/search icon.png" alt="">
+            </div>
+
+            <div class="loginBox">
+                <img class="accountIcon" src="images/account.png" alt="">
+                <p class="accountName">Minha conta</p>
+            </div>
+        </div>
+        <div class="navbar">
+            <p class="itemList" onclick="location.href='catalogo.html'">Todas as marcas</p>
+            <p class="itemList">Masculino</p>
+            <p class="itemList">Feminino</p>
+            <p class="itemList">Promoção</p>
+            <p class="itemList2">Dúvidas Frequentes</p>
+
+            <div class="searchbarMobile">
+                <input class="searchInputMobile" type="text"> <img class="searchButtonMobile" src="images/search icon.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="mobileMenu" id="mobileMenu">
+
+            <h1 class="destaquesTitle">CATEGORIAS</h1>
+
+            <div class="linksMenuGroup">
+                <p class="itemListMobile" onclick="location.href='catalogo.html'">> Todas as marcas</p>
+                <p class="itemListMobile">> Masculino</p>
+                <p class="itemListMobile">> Feminino</p>
+                <p class="itemListMobile">> Promoção</p>
+                <p class="itemListMobile">> Dúvidas Frequentes</p>
+
+            </div>
+
+        </div>
+
+        <div class="returnDiv">
+            <div class="buttonBack" onclick="window.location.href='catalogo.html'">
+                <img src="images/arrowBack.png" class="back-arrow" alt=""> <p class="backText">Voltar</p>
+            </div>
+           
+        </div>
+
+        <div class="principalContainer2">
+
+            <div class="fotoProduto">
+                <img class="fotoRelogio" id="fotoProduto" src="images/relogios/hublot-spirit.png" alt="">
+            </div>
+
+            <div class="infosProduto">
+                <div class="row1-infos">
+                    <div class="headerRow1">
+                        <p class="marcaProduto" id="marcaProduto">Rolex</p>
+                        <div class="rateBox">
+                            <img class="rateStar" src="images/star.png" alt="">
+                            <img class="rateStar" src="images/star.png" alt="">
+                            <img class="rateStar" src="images/star.png" alt="">
+                            <img class="rateStar" src="images/star.png" alt="">
+                            <img class="rateStar" src="images/star.png" alt="">
+                        </div>
+                    </div>
+
+                    <p class="nomeProduto" id="nomeProduto">GMT-Master II</p>
+                    <p class="referenciaProduto" id="referenciaProduto">126710BLRO</p>
+                </div>
+
+                <div class="row2-infos">
+                    <div class="valores">
+                        <p class="valorDolar" id="valorDolar">$38,900.00</p>
+                        <p class="valorProduto" id="valorReal">R$  389,990.00</p>
+                    </div>
+
+                    <button class="buyButton">COMPRAR AGORA</button>
+
+                </div>
+
+                <div class="freteContainer">
+                    <div class="box-title-frete">
+                        <p class="titleFrete">Calcular frete</p> 
+                    </div>
+
+                    <input type="text" id="inputCep" class="freteInput" maxlength="9" oninput="mascaraCep(event)" placeholder="Digite seu CEP">
+                    <button class="btnFrete" onclick="calcularCep()">CALCULAR</button>
+                    
+                    <div class="textosFrete">
+                        <p class="freteTitle">Envio para:</p>
+                        <p class="adress" id="adress">Escolha o destino da entrega para calcular o frete.</p>
+                        <p class="freteResult" id="freteResult"></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    
+
+
+    <footer>
+        <img class="logoFooter" src="images/logoChronus.png" alt="">
+
+        <div class="blocosFooterContainer">
+            <div class="blocoFooter">
+                <p class="titleFooter">Sobre nós</p>
+                <p class="linkFooter">Quem somos</p>
+                <p class="infoFooter">(11) 98765-4321</p>
+                <p class="infoFooter">00.000.000/0000-00</p>
+                <p class="infoFooter">Mogi das Cruzes, SP</p>
+            </div>
+    
+            <div class="blocoFooter">
+                <p class="titleFooter">Institucional</p>
+                <p class="linkFooter">Perguntas Frequentes</p>
+                <p class="linkFooter">Formas de pagamento</p>
+                <p class="linkFooter">Trocas e devoluções</p>
+                <p class="linkFooter">Garantia</p>
+                <p class="linkFooter">Política de privacidade</p>
+
+            </div>
+
+            <div class="blocoFooter2">
+                <p class="titleFooter">Formas de envio</p>
+                <img class="logoCorreio" src="images/logoscorreio.png" alt="">
+            </div>
+
+            
+        </div>
+
+        <p class="copy">CHRONUS © Todos os direitos reservados. 2025</p>
+
+        
+        
+
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+</body>
+</html>

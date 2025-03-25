@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    background-color: #fafafa;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    background-color: #212121;
+}
+
+.principalContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.logoHeader{
+    width: 180px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border: 2px solid rgb(63, 63, 63);
+    height: 35px;
+    border-radius: 7px;
+}
+
+.searchInput{
+    width: 100%;
+    max-width: 470px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 20px;
+    color: rgb(212, 212, 212);
+    font-family: Inter;
+    font-size: 18px;
+}
+
+.searchButton{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 60%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.searchButton:hover{
+    opacity: 100%;
+    scale: 1.1;
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 40px;
+    width: 250px;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.accountIcon{
+    width: 35px;
+}
+
+.accountName{
+    color: white;
+    cursor: pointer;
+}
+
+.accountName:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.itemList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100%;
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.itemList:hover{
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 83%);
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+}
+
+.itemList2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.itemList2:hover{
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 83%);
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.bannerPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+    background: rgb(226,234,233);
+    background: linear-gradient(90deg, rgba(226,234,233,1) 0%, rgba(224,168,123,1) 100%);
+}
+
+.banner{
+
+    height: 100%;
+    object-fit: cover;
+}
+
+.principalContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.destaquesCategoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    margin-top: 20px;
+    height: 500px;
+    width: 80%;
+}
+
+.destaqueCards{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    /* background-color: aqua; */
+}
+
+.destaquesTitle{
+    color: #CFA026;
+    font-family: Poppins;
+}
+
+.card{
+    scale: 1.15;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border-radius: 7px;
+    /* box-shadow: 0px 0px 20px rgb(20,20,20); */
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 
+    0px 4px 6px rgba(0, 0, 0, 0.041),  /* Sombra suave próxima */
+    0px 10px 15px rgba(0, 0, 0, 0.034), /* Sombra média */
+    0px 20px 25px rgba(0, 0, 0, 0.055);  /* Sombra mais distante */
+    transition: 0.4s;
+}
+
+.card:hover{
+    margin-top: -20px;
+    box-shadow: 
+    0px 4px 6px rgba(0, 0, 0, 0.1),  /* Sombra suave próxima */
+    0px 10px 15px rgba(0, 0, 0, 0.075), /* Sombra média */
+    0px 20px 25px rgba(0, 0, 0, 0.2);  /* Sombra mais distante */
+}
+
+.imageCard{
+    width: 100%;
+    height: 200px;
+    border-radius: 7px 7px 0px 0px;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(202, 202, 202)
+}
+
+.nameCard{
+    margin-top: 10px;
+    text-align: center;
+    width: 95%;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: #212121;
+}
+
+.valor{
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 23px;
+    background: linear-gradient(90deg, #B58B1E, #F6BD29);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* //PRINCIPAIS MARCAS//PRINCIPAIS MARCAS//PRINCIPAIS MARCAS//PRINCIPAIS MARCAS// */
+/* //PRINCIPAIS MARCAS//PRINCIPAIS MARCAS//PRINCIPAIS MARCAS//PRINCIPAIS MARCAS// */
+
+.marcasCategoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.marcasBubbles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    gap: 20px;
+    width: 700px;
+    height: 160px;
+}
+
+.marcaCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 
+    0px 4px 6px rgba(0, 0, 0, 0.041),  /* Sombra suave próxima */
+    0px 10px 15px rgba(0, 0, 0, 0.034), /* Sombra média */
+    0px 20px 25px rgba(0, 0, 0, 0.055);
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.marcaCircle:hover{
+    scale: 1.05;
+    opacity: 100%;
+}
+
+.marcasBubbles:hover .marcaCircle:not(:hover){
+    filter: blur(01px);
+    opacity: 70%;
+    scale: 0.95;
+}
+
+
+
+
+
+
+
+
+.vantagensCategoria{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+    /* background-color: rebeccapurple; */
+}
+
+.containerBlocos{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.blocoVantagens{
+    user-select: none;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 340px;
+    border-radius: 9px;
+    border: 3px solid rgb(214, 214, 214);
+    transition: 0.5s;
+}
+
+.blocoVantagens:hover{
+    transform: perspective(600px) rotateY(20deg);
+    margin-top: -20px;
+}
+
+.imgBlocoVantagem{
+    width: 80px;
+    margin-top: 40px;
+}
+
+.titleVantagens{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.vantagensContent{
+    margin-top: 15px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 400px;
+    background-color: #212121;
+}
+
+.logoFooter{
+
+    width: 200px;
+}
+
+.blocosFooterContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.blocoFooter{
+    width: 250px;
+    height: 250px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blocoFooter2{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+.titleFooter{
+    margin-top: 30px;
+    color: #CFA026;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.linkFooter{
+    font-size: 18px;
+    cursor: pointer;
+    color: #9e9e9e;
+    margin-bottom: 0px;
+    margin-top:10px;
+}
+
+.linkFooter:hover{
+    color: rgb(196, 196, 196);
+}
+
+.infoFooter{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;  
+    color: #9e9e9e; 
+    font-weight: 300; 
+    cursor: default;
+}
+
+.logoCorreio{
+    width: 170px;
+    margin-top: 20px;
+}
+
+.copy{
+    color: #808080;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+.searchbarMobile{
+    display: none;
+}
+
+.menuBurguer{
+    display: none;
+}
+
+.accountIconMobile{
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .bannerPrincipal{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        background: rgb(226,234,233);
+        background: linear-gradient(90deg, rgba(226,234,233,1) 0%, rgba(224,168,123,1) 100%);
+    }
+
+    .itemList{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 100%;
+        color: rgb(187, 187, 187);
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .itemList:hover{
+        background: rgb(20,20,20);
+        background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 83%);
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .itemList2{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 100%;
+        color: rgb(187, 187, 187);
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.3s;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .itemList2:hover{
+        background: rgb(20,20,20);
+        background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 83%);
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+    }
+
+    .searchbar{
+        display: none;
+    }
+
+    .accountName{
+        display: none;
+    }
+
+    .accountIcon{
+        display: none;
+    }
+
+    .searchbarMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        border: 2px solid rgb(63, 63, 63);
+        height: 35px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+    }
+    
+    .searchInputMobile{
+        width: 100%;
+        max-width: 470px;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding-left: 20px;
+        color: rgb(212, 212, 212);
+        font-family: Inter;
+        font-size: 18px;
+    }
+    
+    .searchButtonMobile{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        opacity: 60%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menuBurguer{
+        display: flex;
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+
+    .principalContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .logoHeader{
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    .loginBox{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        height: 40px;
+        width: 250px;
+        margin-right: 20px;
+        gap: 10px;
+    }
+
+    .accountIconMobile{
+        display: flex;
+        width: 40px;
+        margin-right: 15px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+    }
+
+    .destaqueCards{
+
+        width: 100%;
+        height: 410px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        /* background-color: red; */
+        overflow-x: scroll;
+        gap: 20px;
+    }
+
+    .card{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 0 0 200px;
+        height: 300px;
+        border-radius: 7px;
+        margin-left: 40px;
+        /* box-shadow: 0px 0px 20px rgb(20,20,20); */
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        box-shadow: 
+        0px 4px 10px rgba(0, 0, 0, 0.041),  /* Sombra suave próxima */
+        0px 10px 15px rgba(0, 0, 0, 0.034), /* Sombra média */
+        0px 20px 25px rgba(0, 0, 0, 0.055);  /* Sombra mais distante */
+        transition: 0.4s;
+    }
+
+    .card:nth-child(3){
+        margin-right: 40px;
+    }
+    
+    .card:hover{
+        margin-top: 0px;
+        box-shadow: 
+        0px 4px 10px rgba(0, 0, 0, 0.041),  /* Sombra suave próxima */
+        0px 10px 15px rgba(0, 0, 0, 0.034), /* Sombra média */
+        0px 20px 25px rgba(0, 0, 0, 0.055);  /* Sombra mais distante */
+    }
+    
+    .imageCard{
+        width: 100%;
+        height: 200px;
+        border-radius: 7px 7px 0px 0px;
+        object-fit: cover;
+        border-bottom: 2px solid rgb(202, 202, 202)
+    }
+    
+    .nameCard{
+        margin-top: 10px;
+        text-align: center;
+        width: 95%;
+        font-weight: 500;
+        margin-bottom: 0px;
+        color: #212121;
+    }
+    
+    .valor{
+        margin-top: 10px;
+        font-weight: 800;
+        font-size: 17px;
+        background: linear-gradient(90deg, #B58B1E, #F6BD29);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .marcasBubbles{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        /* background-color: red; */
+        overflow-x: scroll;
+        gap: 0px;
+        width: 80%;
+        height: 210px;
+    }
+
+    .marcaCircle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 
+        0px 4px 6px rgba(0, 0, 0, 0.041),  /* Sombra suave próxima */
+        0px 10px 15px rgba(0, 0, 0, 0.034), /* Sombra média */
+        0px 20px 25px rgba(0, 0, 0, 0.055);
+        transition: 0.3s;
+        cursor: pointer;
+        opacity: 70%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .vantagensCategoria{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;  
+        /* background-color: rebeccapurple; */
+    }
+
+    .containerBlocos{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 55px;
+        /* background-color: red; */
+
+    }
+
+    .destaquesTitle{
+        text-align: center;
+    }
+
+    .blocosFooterContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        width: 100%;
+        height: 800px;
+        background-color: #212121;
+    }
+
+    .copy{
+        margin-top: -60px;
+    }
+
+    .blocoFooter{
+        margin-bottom: -70px;
+    }
+
+    .blocoFooter2{
+        margin-top: 40px;
+    }
+
+    .mobileMenu{
+        margin-left: -1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+        position: absolute;
+        z-index: 3;
+        background-color: #212121;
+        transition: 0.5s;
+    }
+
+    .linksMenuGroup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        width: 100%;
+        margin-top: 100px;
+        margin-top: 0px;
+        /* background-color: rebeccapurple; */
+    }
+
+    .itemListMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 70px;
+        color: rgb(187, 187, 187);
+        font-size: 22px;
+        font-weight: 400;
+        transition: 0.3s;
+        user-select: none;
+        margin-bottom: -10px;
+    }
+
+    .itemListMobile:hover{
+        background-color: #2e2e2e;
+    }
+
+    .menuBurguer:nth-child(2){
+        display: none;
+    }
+}
