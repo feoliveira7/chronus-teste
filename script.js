@@ -1,23 +1,23 @@
 function mascaraCep(event) {
     let cep = event.target.value;
 
-    // Remove qualquer caractere que não seja número
+
     cep = cep.replace(/\D/g, "");
 
-    // Adiciona a máscara no formato XXXXX-XXX
+
     if (cep.length <= 5) {
         cep = cep.replace(/^(\d{1,5})/, "$1");
     } else {
         cep = cep.replace(/^(\d{5})(\d{1,3})/, "$1-$2");
     }
 
-    // Atualiza o valor do input com a máscara
+
     event.target.value = cep;
 }
 
 const cepValido = (cep) => cep.replace(/\D/g, "").length === 8;
 
-// Função para calcular o frete
+// calcular o frete
 const calcularFrete = (estado, cidade) => {
     if (cidade === "Mogi das Cruzes") {
         return 0;
@@ -55,9 +55,9 @@ const calcularFrete = (estado, cidade) => {
     return fretes[estado] || 0;
 };
 
-// Função para pesquisar o CEP
+//pesquisar o CEP
 const pesquisarCep = async () => {
-    const cep = document.getElementById("inputCep").value; // Pega o valor do input
+    const cep = document.getElementById("inputCep").value;
     if (cepValido(cep)) {
         const url = `https://viacep.com.br/ws/${cep}/json/`;
         try {
@@ -72,11 +72,11 @@ const pesquisarCep = async () => {
             const frete = calcularFrete(endereco.uf, endereco.localidade);
             console.log(`Frete para ${endereco.localidade} - ${endereco.uf}: R$ ${frete.toFixed(2)}`);
 
-            // Atualiza o conteúdo do parágrafo com id "adress"
+            
             const adressText = `${endereco.logradouro}, ${endereco.bairro}, ${endereco.localidade} - ${endereco.uf}`;
             document.getElementById("adress").textContent = adressText;
 
-            // Atualiza o conteúdo do parágrafo com id "freteResult"
+            
             const freteText = `<strong>Entrega padrão:</strong> R$ ${frete.toFixed(2)}`;
             document.getElementById("freteResult").innerHTML = freteText;
         } catch (erro) {
@@ -87,7 +87,7 @@ const pesquisarCep = async () => {
     }
 };
 
-// Função chamada pelo botão para calcular o frete
+
 function calcularCep() {
     pesquisarCep();
 }
